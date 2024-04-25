@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/mainFragment"
+        android:icon="@drawable/home_vec"
+        android:title="" />
+    <item
+        android:id="@+id/lineupsFragment"
+        android:icon="@drawable/lineups_vec"
+        android:title="" />
+    <item
+        android:id="@+id/agentsFragment"
+        android:icon="@drawable/agents_vec"
+        android:title="" />
+    <item
+        android:id="@+id/mapsFragment"
+        android:icon="@drawable/maps_vec"
+        android:title="" />
+
+
+
+
+
+</menu>

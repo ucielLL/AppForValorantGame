@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:layout_margin="25dp"
+    android:background="@drawable/edit_text_background">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nueva alineación"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:textStyle="bold"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        app:errorEnabled="true"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="16dp"
+        android:paddingBottom="3dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre"
+            android:textColorHighlight="@color/white"
+            android:textColorHint="@color/blueDark"
+            android:textSize="18sp"
+            android:drawableStart="@drawable/lineups_vec"
+            app:endIconMode="clear_text"
+            android:drawablePadding="10dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="5dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/btnAddLineUp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Crear"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/lightBlue"
+       />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

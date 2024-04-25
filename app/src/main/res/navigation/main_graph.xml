@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.example.team_val.ui.fragments_botton_menu.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" >
+        <action
+            android:id="@+id/action_mapsFragment_to_lineupList"
+            app:destination="@id/lineupList" />
+    </fragment>
+    <fragment
+        android:id="@+id/agentsFragment"
+        android:name="com.example.team_val.ui.fragments_botton_menu.AgentsFragment"
+        android:label="fragment_agents"
+        tools:layout="@layout/fragment_agents" >
+        <action
+            android:id="@+id/action_agentsFragment_to_fragment_agent"
+            app:destination="@id/fragment_agent" />
+    </fragment>
+    <fragment
+        android:id="@+id/lineupsFragment"
+        android:name="com.example.team_val.ui.fragments_botton_menu.LineupsFragment"
+        android:label="fragment_lineups"
+        tools:layout="@layout/fragment_lineups" />
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.team_val.ui.fragments_botton_menu.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_fragmentInfoUser"
+            app:destination="@id/fragmentInfoUser" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentInfoUser"
+        android:name="com.example.team_val.ui.FragmentInfoUser"
+        android:label="fragment_info_user"
+        tools:layout="@layout/fragment_info_user" />
+    <fragment
+        android:id="@+id/fragment_agent"
+        android:name="com.example.team_val.ui.Fragment_agent"
+        android:label="fragment_agent"
+        tools:layout="@layout/fragment_agent" />
+    <fragment
+        android:id="@+id/lineupList"
+        android:name="com.example.team_val.ui.LineupList"
+        android:label="fragment_lineup_list"
+        tools:layout="@layout/fragment_lineup_list" >
+        <action
+            android:id="@+id/action_lineupList_to_crearLineUp"
+            app:destination="@id/crearLineUp" />
+        <argument
+            android:name="nameMap"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/crearLineUp"
+        android:name="com.example.team_val.ui.CrearLineUp"
+        android:label="fragment_crear_line_up"
+        tools:layout="@layout/fragment_crear_line_up" >
+        <argument
+            android:name="name"
+            app:argType="string" />
+    </fragment>
+</navigation>
